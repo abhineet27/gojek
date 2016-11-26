@@ -12,3 +12,30 @@
 hs_err_pid*
 .metadata/
 RemoteSystemsTempFiles/
+enerated/
+target/
+findbugs/
+test-output/
+bin/
+logs
+
+# Logs and databases #
+######################
+*.log.*
+*.log
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.classpath
+.project
+.settings
+.pydevproject
+*~
