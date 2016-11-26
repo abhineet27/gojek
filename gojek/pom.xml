@@ -57,6 +57,8 @@
 	</pluginRepositories>
 	<modules>
 		<module>gojek-server</module>
+		<module>gojek-domain</module>
+		<module>gojek-services</module>
 	</modules>
 	<dependencies>
 		<dependency>
