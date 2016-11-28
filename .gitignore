@@ -39,3 +39,4 @@ Thumbs.db
 .settings
 .pydevproject
 *~
+.recommenders/
