@@ -7,14 +7,14 @@ package com.gojek.domain;
  * @author abhineetkumar
  *
  */
-public class Address implements Comparable<Address>{
+public class Location implements Comparable<Location>{
 
 	private int driverId;
 	private double latitude;
 	private double longitude;
 	private double accuracy;
 	
-	public Address(int driverId, double latitude, double longitude, double accuracy) {
+	public Location(int driverId, double latitude, double longitude, double accuracy) {
 		super();
 		this.driverId = driverId;
 		this.latitude = latitude;
@@ -50,24 +50,7 @@ public class Address implements Comparable<Address>{
 	}
 
 	@Override
-	public int compareTo(Address o) {
-		if(this.driverId == o.driverId){
-			return 0;
-		}
-		return this.latitude > o.latitude ? 1 : -1;
-	}
-	
-	/*@Override
-	public int hashCode() {
-		// TODO Auto-generated method stub
-		return 1;
-	}*/
-	
-	@Override
-	public boolean equals(Object obj) {
-		System.out.println("this.driverId:"+this.driverId);
-		int did = ((Address)obj).driverId;
-		System.out.println("did:"+did);
-		return this.driverId == did ? false : true;
+	public int compareTo(Location o) {
+		return this.driverId == o.driverId ? 0 : this.latitude > o.latitude ? 1 : -1;
 	}
 }
